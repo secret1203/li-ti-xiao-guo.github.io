@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg.png) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    position: relative;
+}
+
+.rolebg {
+    width: 440px;
+    height: 250px;
+    border-radius: 20px; /* 圓角效果 */
+    overflow: hidden; /* 裁切多餘部分 */
+    box-shadow: 0px 0px 30px 20px rgba(255, 255, 255, 0.05); /* 陰影 */
+    transform-origin: bottom;
+    transition: 2s; /* 滑動時間 */
+}
+
+.rolebg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.role{
+    width: 440px;
+    height: 230px;
+    position: absolute;
+    bottom: 0px;
+    transform-origin: bottom;
+    transition: 2s; /* 滑動時間 */
+}
+.role img {
+    width: 100%;
+    height: 100%;
+}
+.content{
+    width: 440px;
+    padding: 10px;
+    color: #000;
+    position: absolute;
+    bottom: -50px;
+    opacity: 0; /* 內容透明=隱藏 */
+    transition: 2s; /* 滑動時間 */
+}
+.content h1{
+    font-weight: 200;
+}
+p{
+    font-weight: 200;
+    padding: 10px;
+    font-size: 18px;
+}
+/* 動畫效果 */
+.card:hover .rolebg{
+    transform: perspective(1000px) rotateX(30deg) skewX(-20deg);
+} /* 卡片傾斜效果 */
+.card:hover .role{
+    transform: scale(1.3); /* 放大1.3倍 */
+}
+.card:hover .content{
+    opacity: 1; /* 顯示出來 */
+    transform: translateY(70px); /* 向下滑動距離 */
+}
+/* 佔位 */
+/* 佔位 */
+/* 佔位 */
+/* 佔位 */
+/* 佔位 */
+/* 佔位 */
+/* 佔位 */
+/* 佔位 */
+/* 佔位 */
